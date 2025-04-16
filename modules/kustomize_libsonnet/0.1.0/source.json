@@ -1,0 +1,9 @@
+{
+    "integrity": "sha256-XWoeW1OuNK4IYx3aSCJROnw9WzX5IDdPMdA3a9JG7Mk=",
+    "strip_prefix": "kustomize-libsonnet-57e7b20e31651035b1aeef8a30f3aa1c810676c3",
+    "url": "https://github.com/anguslees/kustomize-libsonnet/archive/57e7b20e31651035b1aeef8a30f3aa1c810676c3.zip",
+    "patches": {
+        "BUILD_dot_bazel.patch": "sha256-zY0tH0DMGw+TqCBA9FTgHSx7HodRuh3gd5bb/PISUHQ=",
+        "MODULE_dot_bazel.patch": "sha256-kLI4gEnUnSFm1QnGjplAk8sy1wOXrqoaL1MBVqduvrM="
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "url": "https://github.com/dbanetto/rules_helm/archive/c16fe79f5444462499cc5fc26016affdbeab7ad9.zip",
+    "integrity": "sha256-DaEEVkEgBYeIK3VbtuoSqgB0Rh6UmmAu3gVgBNXYv2E=",
+    "strip_prefix": "rules_helm-c16fe79f5444462499cc5fc26016affdbeab7ad9",
+    "patches": {
+        "repo_dot_bzl.patch": "sha256-96rkEalTIXk95umY8z4u7UXQjoOTZIR99d3+Z+VrGdY=",
+        "extensions_dot_bzl.patch": "sha256-xZ49queC9jJK/bQqQar5EbjRIpBykK6a8227Dp5S8lc="
+    },
+    "patch_strip": 0
+}

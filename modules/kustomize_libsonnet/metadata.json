@@ -1,0 +1,16 @@
+{
+    "homepage": "https://github.com/anguslees/kustomize-libsonnet",
+    "maintainers": [
+        {
+            "email": "tom@btlr.cloud",
+            "github": "tom-butler",
+            "name": "Tom Butler"
+        }
+    ],
+    "repository": [
+        "github:anguslees/kustomize-libsonnet"
+    ],
+    "versions": [
+        "0.1.0"
+    ]
+}

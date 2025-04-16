@@ -1,0 +1,77 @@
+--- /dev/null
++++ BUILD.bazel
+@@ -0,0 +1,74 @@
++load("@rules_oci//oci:defs.bzl", "oci_image", "oci_tarball", "oci_push")
++load("@rules_pkg//:pkg.bzl", "pkg_tar")
++
++filegroup(
++    name = "setup",
++    srcs = glob(["manifests/setup/*.yaml"]),
++    visibility = ["//visibility:public"],
++)
++
++pkg_tar(
++    name = "setup_tar",
++    srcs = [":setup"],
++)
++
++oci_image(
++    name = "setup_image",
++    os = "linux",
++    architecture = "amd64",
++    tars = [
++      ":setup_tar",
++    ],
++    visibility = ["//visibility:public"],
++)
++
++oci_tarball(
++    name = "setup_tarball",
++    image = ":setup_image",
++    repo_tags = ["manifests/kube_prometheus/setup:d3889807798d1697ea0691f10caf1b6a1997a8bd"],
++    visibility = ["//visibility:public"],
++)
++
++oci_push(
++    name = "setup_push",
++    image = ":setup_image",
++    repository = "ghcr.io/tom-butler/manifests-kube_prometheus-setup",
++    remote_tags = ["d3889807798d1697ea0691f10caf1b6a1997a8bd"],
++    visibility = ["//visibility:public"],
++)
++
++filegroup(
++    name = "manifests",
++    srcs = glob(["manifests/*.yaml"]),
++    visibility = ["//visibility:public"],
++)
++ 
++pkg_tar(
++    name = "manifests_tar",
++    srcs = [":manifests"],
++)
++
++oci_image(
++    name = "manifests_image",
++    os = "linux",
++    architecture = "amd64",
++    tars = [
++      ":manifests_tar",
++    ],
++    visibility = ["//visibility:public"],
++)
++
++oci_tarball(
++    name = "manifests_tarball",
++    image = ":manifests_image",
++    repo_tags = ["manifests-kube_prometheus:d3889807798d1697ea0691f10caf1b6a1997a8bd"],
++    visibility = ["//visibility:public"],
++)
++
++oci_push(
++    name = "manifests_push",
++    image = ":manifests_image",
++    repository = "ghcr.io/tom-butler/manifests-kube_prometheus",
++    remote_tags = ["d3889807798d1697ea0691f10caf1b6a1997a8bd"],
++    visibility = ["//visibility:public"],
++)

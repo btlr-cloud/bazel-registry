@@ -1,0 +1,13 @@
+module(
+    name = "kustomize_libsonnet",
+    version = "0.1.0",
+    compatibility_level = 0,
+)
+
+bazel_dep(name = "jsonnet", version = "0.20.0")
+
+jsonnet_deps = use_extension("@jsonnet//tools/build_defs:extensions.bzl", "build_defs")
+use_repo(
+    jsonnet_deps,
+    "io_bazel_rules_jsonnet",
+)

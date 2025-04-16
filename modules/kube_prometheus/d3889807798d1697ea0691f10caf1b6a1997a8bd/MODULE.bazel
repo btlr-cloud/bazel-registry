@@ -1,0 +1,8 @@
+module(
+    name = "kube_prometheus",
+    version = "d3889807798d1697ea0691f10caf1b6a1997a8bd",
+    compatibility_level = 1,
+)
+
+bazel_dep(name = "rules_oci", version = "1.2.0")
+bazel_dep(name = "rules_pkg", version = "0.9.1")

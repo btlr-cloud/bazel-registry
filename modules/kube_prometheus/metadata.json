@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/prometheus-operator/kube-prometheus",
+    "maintainers": [],
+    "repository": [
+        "github:prometheus-operator/kube-prometheus"
+    ],
+    "versions": [
+        "d3889807798d1697ea0691f10caf1b6a1997a8bd"
+    ],
+    "yanked_versions": {}
+}

@@ -1,0 +1,10 @@
+--- /dev/null	2023-06-26 14:23:42
++++ BUILD.bazel	2023-06-26 14:23:36
+@@ -0,0 +1,7 @@
++load("@io_bazel_rules_jsonnet//jsonnet:jsonnet.bzl", "jsonnet_library")
++
++jsonnet_library(
++    name = "kustomize_libsonnet",
++    srcs = ["kustomize.libsonnet"],
++    visibility = ["//visibility:public"],
++)

@@ -1,0 +1,9 @@
+{
+    "url": "https://github.com/prometheus-operator/kube-prometheus/archive/d3889807798d1697ea0691f10caf1b6a1997a8bd.zip",
+    "integrity": "sha256-CMINq69u04vunOB5jFPUuJGrYvU10F9ONhyJkHljLwY=",
+    "strip_prefix": "kube-prometheus-d3889807798d1697ea0691f10caf1b6a1997a8bd",
+    "patches": {
+        "add_build_file.patch": "sha256-UGuy/9IZ6RJAFjk+U45zdXtMNKEww6lx4i28OrBbY74="
+    },
+    "patch_strip": 0
+}

@@ -1,0 +1,11 @@
+{
+    "homepage": "https://github.com/dbanetto/rules_helm",
+    "maintainers": [],
+    "repository": [
+        "github:dbanetto/rules_helm"
+    ],
+    "versions": [
+        "0.2.0"
+    ],
+    "yanked_versions": {}
+}
